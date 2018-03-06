@@ -1,21 +1,30 @@
 <template>
     <header>
-        <h1>{{header_text}}</h1>
-        <h2>foo</h2>
-    </header>
+        <h1>{{storyTitle}}</h1>
+        <!-- <siteNav></siteNav> -->
+    </header>    
 </template>
 
 <script>
+import siteNav from '@/components/siteNav'
+
 export default {
   name: 'siteHeader',
+  components: {
+    siteNav
+  },
   data () {
     return {
-      header_text: 'This is a butt butt'
+      storyTitle: 'Story Title'
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
+
+    header {
+        text-align: center;
+    }
 
 </style>
